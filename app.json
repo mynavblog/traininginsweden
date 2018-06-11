@@ -1,0 +1,25 @@
+{
+  "id": "468d2370-8bf2-4bfb-b534-b520aba86217",
+  "name": "Seminar Management",
+  "publisher": "Krzysztof",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "compatibilityId": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "target": "Internal",
+  "features": "TranslationFile",
+  "idRange": {
+    "from": 123456700,
+    "to": 123456799
+  }
+}
