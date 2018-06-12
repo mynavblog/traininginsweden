@@ -3,6 +3,11 @@
   <file datatype="xml" source-language="en-US" original="Seminar Management">
     <body>
       <group id="body">
+        <trans-unit id="Report 2858589782 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Seminar Reg.- Participant List</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
         <trans-unit id="Codeunit 1730582342 - NamedType 3114637384" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>There is no participant to post.</source>
           <note from="Developer" annotates="general" priority="2" />
@@ -190,6 +195,11 @@
         </trans-unit>
         <trans-unit id="Page 2674218673 - Action 3761272521 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>&amp;Charges</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Action</note>
+        </trans-unit>
+        <trans-unit id="Page 2674218673 - Action 1405007275 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Navigate</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">Page - Action</note>
         </trans-unit>
@@ -545,6 +555,11 @@
         </trans-unit>
         <trans-unit id="Table 2143111931 - Field 514695969 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Posting No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 2143111931 - Field 2682724073 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. Printed</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
         </trans-unit>

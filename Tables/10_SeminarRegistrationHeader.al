@@ -259,6 +259,11 @@ table 123456710 "Seminar Registration Header"
         field(28; "Posting No."; Code[20])
         {
         }
+        field(40; "No. Printed"; Integer)
+        {
+            Caption = 'No. Printed';
+            Editable = false;
+        }
 
     }
 
@@ -291,7 +296,7 @@ table 123456710 "Seminar Registration Header"
 
     trigger OnDelete();
     begin
-        rec.TestField(Status,Status::Canceled);
+        rec.TestField(Status, Status::Canceled);
         SeminarRegLine.RESET;
         SeminarRegLine.SETRANGE("Document No.", "No.");
         SeminarRegLine.SETRANGE(Registered, true);
@@ -323,6 +328,9 @@ table 123456710 "Seminar Registration Header"
             NoSeriesMgt.InitSeries(SeminarSetup."Seminar Registration Nos.", xRec."No. Series", 0D, "No.", "No. Series");
         end;
         InitRecord;
+        if GetFilter("Seminar No.") <> '' then
+            if GetRangeMin("Seminar No.") = GetRangeMax("Seminar No.") then
+                Validate("Seminar No.", GetRangeMin("Seminar No."));
     end;
 
     procedure AssistEdit(OldSeminarRegHeader: Record "Seminar Registration Header"): Boolean;

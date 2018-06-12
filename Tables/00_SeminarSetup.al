@@ -4,7 +4,7 @@ table 123456700 "CSD Seminar Setup"
     
     fields
     {
-        field(10;"Primay Key";Code[10])
+        field(10;"Primary Key";Code[10])
         {
             DataClassification = ToBeClassified;
             Caption = 'Primary Key';
@@ -34,7 +34,7 @@ table 123456700 "CSD Seminar Setup"
 
     keys
     {
-        key(PK;"Primay Key")
+        key(PK;"Primary Key")
         {
             Clustered = true;
         }
