@@ -3,6 +3,8 @@ page 123456710 "Seminar Registration"
     // CSD1.00 - 2018-01-01 - D. E. Veloper
     //   Chapter 6 - Lab 3-1
     //     - Created new page
+    //   Chapter 7 - Lab 5-8
+    //     - Added Post Action  
 
     Caption = 'Seminar Registration';
     PageType = Document;
@@ -57,7 +59,6 @@ page 123456710 "Seminar Registration"
                 {
                 }
             }
-
             part(SeminarRegistrationLines; "Seminar Registration Subpage")
             {
                 Caption = 'Lines';
@@ -65,7 +66,7 @@ page 123456710 "Seminar Registration"
             }
             group("Seminar Room")
             {
-                field("Room Resource No."; "Room Resource No.")
+                field("Room Resource Code"; "Room Resource No.")
                 {
                 }
                 field("Room Name"; "Room Name")
@@ -114,6 +115,7 @@ page 123456710 "Seminar Registration"
                 Provider = SeminarRegistrationLines;
                 SubPageLink = "No." = field ("Bill-to Customer No.");
             }
+
             systempart("Links"; Links)
             {
             }
@@ -121,7 +123,6 @@ page 123456710 "Seminar Registration"
             {
             }
         }
-
     }
 
     actions
@@ -146,6 +147,19 @@ page 123456710 "Seminar Registration"
                     RunObject = Page 123456724;
                     RunPageLink = "Document No." = Field ("No.");
                 }
+            }
+        }
+        area(Processing)
+        {
+            action("&Post")
+            {
+                Caption = '&Post';
+                Image = PostDocument;
+                Promoted = true;
+                PromotedIsBig = true;
+                PromotedCategory = Process;
+                ShortcutKey = F9;
+                RunObject = codeunit "Seminar-Post (Yes/No)";
             }
         }
     }
