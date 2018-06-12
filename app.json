@@ -16,7 +16,6 @@
   "screenshots": [],
   "platform": "11.0.0.0",
   "application": "11.0.0.0",
-  "target": "Internal",
   "features": "TranslationFile",
   "idRange": {
     "from": 123456700,
