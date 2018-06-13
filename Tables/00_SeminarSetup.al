@@ -1,7 +1,7 @@
 table 123456700 "CSD Seminar Setup"
 {
     DataClassification = ToBeClassified;
-    
+    Caption = 'Seminar Setup';
     fields
     {
         field(10;"Primary Key";Code[10])
